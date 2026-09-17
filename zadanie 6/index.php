@@ -55,5 +55,12 @@
         }
     }    
     echo "<br>";
+    $sum = 0;
+    for ($i = 0; $i < count($array4x4); $i++){
+        for($j = 0; $j < count($array4x4[$i]); $j++){
+            $sum = $sum + $array4x4[$i][$j];
+        }
+    }
+    echo $sum;
 
 ?>
