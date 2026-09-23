@@ -13,7 +13,7 @@
         if(count($SredniaTablica) === 0){
             return 0.0;
         }
-        return array_sum($SredniaTablica) / count($SredniaTablica);
+        return obliczSume($SredniaTablica) / count($SredniaTablica);
 
     }
     function obliczMaks(array $MaksTablica) : int{
