@@ -118,12 +118,21 @@
     // echo $srednia;
 
     //zadanie 11
-    $asocjacja = [
-        "imie" => "Kacper",
-        "wiek" => 17,
-        "miasto" => "Łódź"
-    ];
-    foreach ($asocjacja as $klucz => $wynik){
-        echo "$klucz : $wynik ";
+    // $asocjacja = [
+    //     "imie" => "Kacper",
+    //     "wiek" => 17,
+    //     "miasto" => "Łódź"
+    // ];
+    // foreach ($asocjacja as $klucz => $wynik){
+    //     echo "$klucz : $wynik ";
+    // }
+
+    $osoby = [
+    ["imie" => "chuj", "wiek" => 17],
+    ["imie" => "Bartek", "wiek" => 6]
+];
+
+    foreach ($osoby as $osoba) {
+        echo "Imię: " . $osoba["imie"] . " | Wiek: " . $osoba["wiek"] . "<br>\n";
     }
 ?>
