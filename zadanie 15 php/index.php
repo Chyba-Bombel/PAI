@@ -1,10 +1,10 @@
 <?php
-    $name = "username";
-    $value = "Olek";
-    //setcookie(name,value,expire,path,domain,secure,httponly);
-    //wymaganie: name;
-    //reszta opcjonalne
-    setcookie($name, $value, time() + (86400*30), "/");
+    // $name = "username";
+    // $value = "Olek";
+    // //setcookie(name,value,expire,path,domain,secure,httponly);
+    // //wymaganie: name;
+    // //reszta opcjonalne
+    // setcookie($name, $value, time() + (86400*30), "/");
 
 ?>  
 <!DOCTYPE html>
@@ -16,21 +16,21 @@
 </head>
 <body>
     <?php
-        if(isset($_COOKIE[$name])){
-            echo "Ciacho ".$name." jest ustawione.";
-            echo "Wartość: ".$_COOKIE[$name];
-        } else{
-            echo "Ciacho ". $name . " nie jest ustawione!";
-        }
-        //modyfikacja
-        setcookie($name, "Słupinka", time() -3600);
-        //usuwanie
-        setcookie("username", "",time()-3600);
-        if(count($_COOKIE) > 0){
-            echo "Ciasteczka włączone";
-        } else {
-            echo "Ciasteczka wyłączone";
-        }
+        // if(isset($_COOKIE[$name])){
+        //     echo "Ciacho ".$name." jest ustawione.";
+        //     echo "Wartość: ".$_COOKIE[$name];
+        // } else{
+        //     echo "Ciacho ". $name . " nie jest ustawione!";
+        // }
+        // //modyfikacja
+        // setcookie($name, "Słupinka", time() -3600);
+        // //usuwanie
+        // setcookie("username", "",time()-3600);
+        // if(count($_COOKIE) > 0){
+        //     echo "Ciasteczka włączone";
+        // } else {
+        //     echo "Ciasteczka wyłączone";
+        // }
     ?>
 </body>
 </html>
