@@ -11,6 +11,7 @@
 <body>
     <nav id="nav">
         <a href="index.php" class="<?= $currentPage == 'index.php' ? 'active': '' ?>">Główna strona</a>
+        
     </nav>
 </body>
 </html>
